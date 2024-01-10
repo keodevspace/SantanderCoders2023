@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+h1, p{
+    margin: 20px 0px;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 32px;
+}
+
+p{
+    font-weight: 300;
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.2;
+}
+
+figcaption{
+    font-weight: 300;
+    font-size: 12px;
+}
+
+table{
+    width: 100%;
+    background-color: #f1f1f1;
+    border-collapse: collapse;
+    font-family: Roboto, sans-serif;
+    table-layout: fixed;
+}
+
+table tbody tr td{
+    border-bottom: 1px solid silver;
+    padding: 5px 0;
+    text-align:center;
+    font-weight: 100;
+}
+
+table thead tr th{
+    
+    padding: 5px 0;
+    text-align:center;
+    font-weight: 100;
+}
+
+table thead tr:last-child{
+    border-bottom: 2px solid silver;
+}
+
+
+table thead tr th:not(:last-child),table tbody tr td:not(:last-child) {
+    border-right: 1px solid silver;
+
+}
+
+table tbody tr:nth-child(2n-1) {
+    background-color: white;
+}
+
+table tbody tr td:not(:first-child){
+    color: rgb(88, 204, 88);
+    font-weight: 100;
+    font-size: 20px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+header, main, footer{
+    width: 100%;
+    max-width: 1280px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+
+section, aside, header, footer{
+    box-shadow: 0 0 15px rgba(0,0,0,.2);
+    margin: 10px
+}
+
+section{
+    margin-left:0;
+    padding: 15px 50px;
+}
+
+aside{
+    margin-right:0;
+}
+
+nav ul{
+    display:flex;
+    justify-content: flex-end;
+}
+
+nav ul li{
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    margin:0 1px;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+footer ul {
+    padding: 5px 0px 5px 30px;
+}
+
+footer ul li{
+    padding: 2px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+footer div{
+    font-weight: 100;
+    text-align: center;
+    font-size: 10px;
+}
+
+aside{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+aside ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+aside ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+aside ul li figcaption{
+    text-align: center;
+}
+
+@media (max-width: 1090px) {
+    main{
+        display: block;
+    }
+
+    aside ul{
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 100%;
+    }
+}
