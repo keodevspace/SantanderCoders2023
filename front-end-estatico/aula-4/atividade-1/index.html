@@ -1,0 +1,92 @@
+<!-- ## Atividade 1 - Agência ✈️ TravelMundo
+
+Você é o desenvolvedor do um site de reservas de viagens chamado "TravelMundo". 
+
+A empresa deseja criar uma página de reserva que ofereça uma experiência intuitiva e fácil de usar para os usuários. No entanto, você precisa escolher o tipo correto de campo de entrada HTML para cada parte do processo de reserva. 
+
+Crie uma página HTML (CSS é opcional) que contenha o formulário de reserva com o tipo correto de campo de entrada para cada um dos cenários trazidos pelo cliente. 
+
+Aqui estão as situações em que você deve escolher o tipo apropriado de campo de entrada:
+
+- **Cenário 1:** Para permitir que os usuários insiram seu nome completo ao fazer uma reserva de viagem.
+- **Cenário 2:** Para que os usuários escolham a data de partida de sua viagem.
+- **Cenário 3:** Para que os usuários informem o número de passageiros.
+- **Cenário 4:** Para que os usuários selecionem seu país de residência a partir de uma lista suspensa.
+- **Cenário 5:** Para que os usuários insiram seu endereço de e-mail ao fazer uma reserva.
+- **Cenário 6:** Para que os usuários escolham o tipo de refeição desejado durante o voo (por exemplo, vegetariana, sem glúten, padrão) [uma refeição].
+- **Cenário 7:** Para permitir que os usuários insiram o número de telefone de contato durante o processo de reserva.
+- **Cenário 8:** Para que os usuários escolham o destino da viagem entre várias opções (por exemplo, Paris, Londres, Nova York, Tóquio).
+- **Cenário 9:** Para que os usuários indiquem se têm alguma preferência de assento (por exemplo, janela, corredor, próximo à saída de emergência) durante o voo.
+- **Cenário 10:** Para que os usuários insiram os detalhes do cartão de crédito ao efetuar o pagamento da reserva.
+- **Cenário 11:** Para que os usuários façam o upload de uma cópia digitalizada de seu passaporte como parte do processo de reserva para viagens internacionais.
+- **Cenário 12**: Para que os usuários possam selecionar as opções de preferências de serviço, como serviço de quarto, traslado do aeroporto e passeis turisticos adicionais. É possível escolher várias opções. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Viagem - TravelMundo</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <h1>Reserva de Viagem - TravelMundo</h1>
+    <form action="#" method="post">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="dataPartida">Data de Partida:</label>
+        <input type="date" id="dataPartida" name="dataPartida" required>
+
+        <label for="numPassageiros">Número de Passageiros:</label>
+        <input type="number" id="numPassageiros" name="numPassageiros" min="1" required>
+
+        <label for="paisResidencia">País de Residência:</label>
+        <select id="paisResidencia" name="paisResidencia" required>
+            <option value="paris">Paris</option>
+            <option value="londres">Londres</option>
+            <option value="novaYork">Nova York</option>
+            <option value="toquio">Tóquio</option>
+        </select>
+
+        <label for="email">Endereço de E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="tipoRefeicao">Tipo de Refeição:</label>
+        <input type="text" id="tipoRefeicao" name="tipoRefeicao" placeholder="Ex: Vegetariana, Sem Glúten, Padrão" required>
+
+        <label for="telefone">Número de Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <label for="destino">Destino da Viagem:</label>
+        <select id="destino" name="destino" required>
+            <option value="paris">Paris</option>
+            <option value="londres">Londres</option>
+            <option value="novaYork">Nova York</option>
+            <option value="toquio">Tóquio</option>
+        </select>
+
+        <label for="preferenciaAssento">Preferência de Assento:</label>
+        <input type="text" id="preferenciaAssento" name="preferenciaAssento" placeholder="Ex: Janela, Corredor, Próximo à saída de emergência" required>
+
+        <label for="cartaoCredito">Detalhes do Cartão de Crédito:</label>
+        <input type="text" id="cartaoCredito" name="cartaoCredito" required>
+
+        <label for="passaporte">Cópia Digitalizada do Passaporte:</label>
+        <input type="file" id="passaporte" name="passaporte" accept=".pdf, .jpg, .png">
+
+        <label for="preferenciasServico">Preferências de Serviço:</label>
+        <select id="preferenciasServico" name="preferenciasServico" multiple required>
+            <option value="servicoQuarto">Serviço de Quarto</option>
+            <option value="trasladoAeroporto">Traslado do Aeroporto</option>
+            <option value="passeiosTuristicos">Passeios Turísticos Adicionais</option>
+        </select>
+
+        <button type="submit">Confirmar Reserva</button>
+    </form>
+    <div class="logo-container">
+        <img src="/front-end-estatico/aula-4/atividade-1/logo.jpeg" alt="Logo TravelMundo">
+    </div>
+</body>
+</html> 
