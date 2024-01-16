@@ -1,0 +1,31 @@
+{
+  "participants": [
+    {
+      "id": "ae61",
+      "name": "Keo Coelho",
+      "age": "36",
+      "email": "keoxcoelho@gmail.com",
+      "shirtSize": "G",
+      "registrationCategory": "3RUN",
+      "donationAmount": "80"
+    },
+    {
+      "id": "031b",
+      "name": "Keo Coelho",
+      "age": "36",
+      "email": "keoxcoelho@gmail.com",
+      "shirtSize": "G",
+      "registrationCategory": "5RUN",
+      "donationAmount": "80"
+    },
+    {
+      "id": "a723",
+      "name": "Maria Alves",
+      "age": "30",
+      "email": "mariaalves@email.com",
+      "shirtSize": "M",
+      "registrationCategory": "5RUN",
+      "donationAmount": "50"
+    }
+  ]
+}
