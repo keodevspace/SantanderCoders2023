@@ -19,7 +19,7 @@ document.getElementById('registrationForm').addEventListener('submit', function 
         donationAmount
     };
 
-    // chamada à API usando fetch
+    // chamada da API usando fetch
     fetch('http://localhost:3000/participants', {
         method: 'POST',
         headers: {
