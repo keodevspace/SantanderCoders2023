@@ -9,13 +9,11 @@
 <body>
     <form action="#" method="post">
         <label for="nome">Nome Completo:</label>
-        <input type="text" id="nome" name="nome" required><br>
-
-        <label for="dataPartida">Data de Partida:</label>
-        <input type="date" id="dataPartida" name="dataPartida" required><br>
+        <input type="text" id="nome" name="nome" required><br><br>        <label for="dataPartida">Data de Partida:</label>
+        <input type="date" id="dataPartida" name="dataPartida" required><br><br>
 
         <label for="numPassageiros">Número de Passageiros:</label>
-        <input type="number" id="numPassageiros" name="numPassageiros" min="1" required><br>
+        <input type="number" id="numPassageiros" name="numPassageiros" min="1" required><br><br>
 
         <label for="paisResidencia">País de Residência:</label>
         <select id="paisResidencia" name="paisResidencia" required>
@@ -23,16 +21,16 @@
             <option value="londres">Londres</option>
             <option value="novaYork">Nova York</option>
             <option value="toquio">Tóquio</option>
-        </select><br>
+        </select><br><br>
 
         <label for="email">Endereço de E-mail:</label>
-        <input type="email" id="email" name="email" required><br>
+        <input type="email" id="email" name="email" required><br><br>
 
         <label for="tipoRefeicao">Tipo de Refeição:</label>
-        <input type="text" id="tipoRefeicao" name="tipoRefeicao" placeholder="Ex: Vegetariana, Sem Glúten, Padrão" required><br>
+        <input type="text" id="tipoRefeicao" name="tipoRefeicao" placeholder="Ex: Vegetariana, Sem Glúten, Padrão" required><br><br>
 
         <label for="telefone">Número de Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" required><br>
+        <input type="tel" id="telefone" name="telefone" required><br><br>
 
         <label for="destino">Destino da Viagem:</label>
         <select id="destino" name="destino" required>
@@ -40,23 +38,23 @@
             <option value="londres">Londres</option>
             <option value="novaYork">Nova York</option>
             <option value="toquio">Tóquio</option>
-        </select><br>
+        </select><br><br>
 
         <label for="preferenciaAssento">Preferência de Assento:</label>
-        <input type="text" id="preferenciaAssento" name="preferenciaAssento" placeholder="Ex: Janela, Corredor, Próximo à saída de emergência" required><br>
+        <input type="text" id="preferenciaAssento" name="preferenciaAssento" placeholder="Ex: Janela, Corredor, Próximo à saída de emergência" required><br><br>
 
         <label for="cartaoCredito">Detalhes do Cartão de Crédito:</label>
-        <input type="text" id="cartaoCredito" name="cartaoCredito" required><br>
+        <input type="text" id="cartaoCredito" name="cartaoCredito" required><br><br>
 
-        <label for="passaporte">Cópia Digitalizada do Passaporte:</label>
-        <input type="file" id="passaporte" name="passaporte" accept=".pdf, .jpg, .png"><br>
+        <label for="passaporte">Cópia Digitalizada do Passaporte:</label><br><br>
+        <input type="file" id="passaporte" name="passaporte" accept=".pdf, .jpg, .png"><br><br>
 
         <label for="preferenciasServico">Preferências de Serviço:</label>
         <select id="preferenciasServico" name="preferenciasServico" multiple required>
             <option value="servicoQuarto">Serviço de Quarto</option>
             <option value="trasladoAeroporto">Traslado do Aeroporto</option>
             <option value="passeiosTuristicos">Passeios Turísticos Adicionais</option>
-        </select><br>
+        </select><br><br>
 
         <button type="submit">Confirmar Reserva</button>
     </form>
