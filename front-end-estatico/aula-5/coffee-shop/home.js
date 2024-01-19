@@ -1,7 +1,18 @@
-const inputCheck = document.querySelector('#modo-noturno');
-const elementoBody = document.body;
+const rangeInput = document.getElementById('nivel-satisfacao');
+const porcentagemText = document.getElementById('porcentagem');
 
-inputCheck.addEventListener('click', () => {
-    const modo = inputCheck.checked ? 'dark' : 'light';
-    elementoBody.classList.toggle('modo-noturno', inputCheck.checked);
-});
+rangeInput.addEventListener('input', () => {
+    porcentagemText.textContent = `${rangeInput.value}%`;
+  });
+
+  // revisar
+  const enviarButton = document.querySelector('button');
+  enviarButton.addEventListener('click', () => {      
+      console.log('Formulário enviado!');
+  });
+
+function toggleDescription(card) {
+    card.classList.toggle('active');
+}
+  
+ 
