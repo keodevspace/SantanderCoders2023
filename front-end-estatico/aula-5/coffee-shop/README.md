@@ -6,10 +6,10 @@ Você, um talentoso desenvolvedor, foi recrutado para um emocionante projeto. Um
 
 **Desafios Criativos [Requisitos]:**
 
-1. **Título e Descrição Cativantes:**
+1. **Título e Descrição Cativantes:** FEITO
     - Como desenvolvedor, sua primeira tarefa é criar um **título** e uma **descrição inspiradora** que capturam a essência do Café Encantado. Você deve convidar os visitantes a explorar um mundo onde o café e a criatividade se entrelaçam.
     - A ideia é ter uma área do site explicando a história do café.
-2. **Catálogo de Café e Inspiração:**
+2. **Catálogo de Café e Inspiração:**  FEITO
     - O café oferecerá uma variedade de bebidas mágicas e bolos deliciosos. Crie **cards cativantes** para cada produto. Seja criativo ao apresentar imagens, nomes e descrições que despertem a imaginação dos visitantes.
     - Em uma área `<main>` crie cards com imagens usando a tag `<figure>` e use o `<figurecaption>` para a descrição dos produtos.
 3. **Header e Footer Encantados:**

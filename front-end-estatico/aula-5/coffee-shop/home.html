@@ -7,19 +7,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./home.css">
-    <link rel="shortcut icon" href="./assets/logo/coffeeshop-logo.png" type="image/x-icon" alt="Logo da CoffeeShop: xícara em fundo preto">
+    <link rel="shortcut icon" href="./assets/coffee/coffee4.png" type="image/x-icon" alt="Grãos de café">
     <title>Café Encantado</title>
 </head>
 <body>
     <header>
         <nav>
             <a class="logo" href="./home.html">
-                <img src="./assets/logo/coffeeshop-logo.png" alt="Logo da CoffeeShop: xícara em fundo preto">
-            </a>            
+                <video autoplay loop muted>
+                    <source src="./assets/logo/logo-cafe-encantado.mp4" type="video/mp4" alt="Logo com xícara amarela saindo fogo e grãos de café">                    
+                </video>
+            </a>          
             <ul>
                 <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#historia">Sobre</a></li>
+                <li><a href="#formulario">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -30,10 +32,12 @@
         <h6>Explore os caminhos aromáticos que traçam a história de cada grão cultivado com cuidado. Nossa paixão pelo café se entrelaça com a jornada de cada semente, criando um conto de sabores que despertará sua imaginação.</h6>
         
         <figure class="cover">    
-            <img src="./assets/cover/cover-home.png" alt="Imagem de um Chemes e xícaras de café">
+            <video width="100%" height="auto" autoplay loop muted playsinline>
+                <source src="./assets/cover/banner-cafe-encantado.mp4" type="video/mp4" alt="Vídeo de grão de café caindo em uma xícara branca">                
+            </video>
         </figure>
 
-        <section>
+        <section id="historia">
             <h3>História do Café Encantado</h3>
             <p>Em 2019, o Café Encantado foi fundado por um grupo de amigos que compartilhavam a paixão pelo café. A ideia era criar um espaço onde as pessoas pudessem se reunir para apreciar um bom café e conversar sobre a vida. O Café Encantado foi criado para ser um lugar onde as pessoas pudessem se sentir em casa.<br><br>Nossos fundadores, apaixonados pela alquimia do café, decidiram criar um espaço único, onde cada xícara conta uma história. Cada grão é colhido no momento perfeito, trazendo consigo os aromas de terras distantes e a promessa de experiências sensoriais inesquecíveis.</br><br>O Café Encantado é mais do que uma cafeteria; é um refúgio para aqueles que buscam inspiração. Nosso ambiente acolhedor é projetado para despertar a criatividade, com cantos aconchegantes onde artistas se reúnem para trocar ideias e escritores encontram a musa nas nuances de cada gole.<br><br>Da seleção rigorosa dos grãos à arte de preparar cada bebida, cada detalhe no Café Encantado é cuidadosamente planejado para proporcionar uma experiência única. Acreditamos que o café tem o poder de encantar os sentidos e desbloquear portais para a imaginação.</p>
             
@@ -59,6 +63,26 @@
                     <figcaption>Grãos Selecionados</figcaption>
                     <div class="card-description">Grãos de cultivo especial originário do Pico da Bandeira<br><br><strong>R$ 80,00 kg</strong></div>
                 </figure>
+
+                <br>
+
+                <figure class="card" onclick="toggleDescription(this)">
+                    <img src="https://img.freepik.com/fotos-gratis/delicioso-bolo-com-ameixas-frescas-e-framboesas_2829-20036.jpg?w=740&t=st=1705670380~exp=1705670980~hmac=d5ec9db7a2dd331f169a4d518f4d36d0b589e1f5dc3d6bce8bc5564d40ff416b" alt="Imagem ddo Cheesecake de Framboesa">
+                    <figcaption>Cheesecake</figcaption>
+                    <div class="card-description">Cheesecake de Framboesa com frutas vermelhas sem lactose<br><br><strong>R$ 20,00 kg</strong></div>
+                </figure>
+
+                <figure class="card" onclick="toggleDescription(this)">
+                    <img src="https://img.freepik.com/fotos-gratis/vista-do-delicioso-bolo-feito-de-cenoura_23-2150316408.jpg?w=740&t=st=1705670060~exp=1705670660~hmac=b8ac14ce7a0042cb7b59bbdcd1e5711c63baac80945e16abe0062f96dc8cdbf9" alt="Imagem do Bolo de Cenoura">
+                    <figcaption>Bolo de Cenoura</figcaption>
+                    <div class="card-description">Receita especial feita com ingredientes da nossa horta<br><br><strong>R$ 28,00 kg</strong></div>
+                </figure>
+
+                <figure class="card" onclick="toggleDescription(this)">
+                    <img src="https://img.freepik.com/fotos-gratis/vista-lateral-pedaco-de-cheesecake-classico_176474-3175.jpg?w=740&t=st=1705670286~exp=1705670886~hmac=3ba9d2e316ebefb6f47b4e78082918a5922e8464618d8d26649939ed9fa00553" alt="Imagem da Torta de Limão">
+                    <figcaption>Torta de Limão</figcaption>
+                    <div class="card-description">Opção vegana com ingredientes selecionados e receita da casa<br><br><strong>R$ 35,00 kg</strong></div>
+                </figure>
         
             <section id="eventos">
                 <h2>Eventos Especiais</h2>
@@ -81,12 +105,22 @@
                             <td>Noite de Poesia e Café</td>
                             <td>Entrada Gratuita</td>
                         </tr>
+                        <tr>
+                            <td>02/05/2024</td>
+                            <td>Violão e Café</td>
+                            <td>R$ 20,00</td>
+                        </tr>
+                        <tr>
+                            <td>16/05/2024</td>
+                            <td>Noite de Poesia e Café</td>
+                            <td>Entrada Gratuita</td>
+                        </tr>
                     </tbody>
                 </table>
             </section>
     
 
-            <section>
+            <section id="formulario">
                 <div id="banner"></div>
                 <h3>Registre-se para ideias brilhantes</h3>
                 <form id="registrationForm">

@@ -41,10 +41,12 @@ header nav {
   padding: 10px 40px;
 }
 
-.logo img {
-  width: 6%;
+.logo video {
+  width: 4%;
   height: auto;
   float: left;
+  border-radius: 150px;
+  box-shadow: 0px 0px 100px 10px var(--color-black);
 }
 
 nav ul {
@@ -100,17 +102,21 @@ h6 {
 h6:hover {
   font-size: 35px;
   margin: 10px 500px; 
-  margin-bottom: 10px;
+  margin-bottom: 70px;
   border-radius: 90px;
   background-color: var(--color-grey);
   box-shadow: var(--color-grey) 0px 0px 100px 100px;
   transition: 0.7s;
 }
 
-.cover img {
-  width: 30%;
-  height: auto;
-  margin: 0;
+.cover video {
+  width: 100%;
+  height: auto; 
+  border-radius: 150px;
+  box-shadow: 0px 0px 100px 10px var(--color-grey);
+  overflow: hidden;  
+  /* transform: rotateX(180deg); */
+  margin-bottom: 200px;
 }
 
 .cards {
