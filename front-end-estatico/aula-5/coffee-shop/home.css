@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 :root {
@@ -16,114 +17,102 @@
 
 body {
   font-family: var(--font-family);
-
-  color: var(--color-white);
+  color: var(--color-white);  
   background: linear-gradient(to right, var(--color-black), var(--color-grey));
   text-align: center;
   margin: 0;
   overflow-x: hidden;
 }
 
-h2 {
-  color: var(--color-white);
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
 header nav {
   position: relative;
-  padding: 10px 40px;
+  padding: 10px 5%;   
 }
 
 .logo video {
-  width: 4%;
+  width: 70px; 
   height: auto;
   float: left;
-  border-radius: 150px;
-  box-shadow: 0px 0px 100px 10px var(--color-black);
+  border-radius: 50%;
+  box-shadow: 0 0 10px 2px var(--color-black);
+}
+
+nav a {
+  color: var(--color-ultra-light-grey);
 }
 
 nav ul {
   list-style: none;
   position: absolute;
-  margin: 70px 0 0 0;
-  right: 150px;
+  margin: 2% 0 0 0; 
+  right: 5%;   
 }
 
 nav ul li {
-  font-size: 30px;
+  font-size: 2vw; 
   float: left;
-  margin-left: 50px;
+  margin-left: 2vw; 
 }
 
-nav a {
-  text-decoration: none;
-  color: var(--color-white);
-  font-weight: 100;
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+  color: var(--color-white);  
 }
 
 h1 {
-  font-size: 150px;
-  font-weight: 50;
-  margin: 250px 0 70px;
+  font-size: 4vw; 
+  margin: 10vh 0 5vh; 
   padding-top: 15%;
 }
 
-h5 {
-  color: var(--color-yellow);
-  font-size: 50px;
-  font-weight: 100;
-  margin: 0 0 20px;
-  text-align: center;
-  word-wrap: break-word;
-  margin-bottom: 50px;
+h2 {
+  font-size: 3.2vw; 
+  margin-bottom: 2vh; 
+  margin-top: 10vh; 
 }
 
-h5:hover {
-  font-size: 100px;
-  margin: 10px 100px;
+h3 {
+  font-size: 3.2vw; 
+  margin-bottom: 5vh; 
+  margin-top: 15vh; 
+}
+
+h5 {
+  font-size: 3vw; 
+  margin: 0 0 1vh;   
+  color: var(--color-yellow); 
 }
 
 h6 {
-  color: var(--color-ultra-light-grey);
-  font-size: 20px;
-  font-weight: 100;
-  margin: 40px 50px;
+  font-size: 1vw; 
+  margin: 5vh 2.5vw; 
   text-align: center;
-  margin-bottom: 20px;
   word-wrap: break-word;
-  padding: 20px;
-}
-
-h6:hover {
-  font-size: 35px;
-  margin: 500px;
-  margin-bottom: 200px;
-  border-radius: 90px;
-  background-color: var(--color-grey);
-  box-shadow: var(--color-grey) 0px 0px 100px 100px;
-  transition: 0.7s;
+  padding: 2vw;
 }
 
 .cover video {
   width: 100%;
   height: auto;
-  border-radius: 80px;
-  box-shadow: 0px 0px 100px 10px var(--color-grey);
+  border-radius: 5vw; 
+  box-shadow: 0 0 10px 2px var(--color-grey);
   overflow: hidden;
-  margin-bottom: 200px;
+  margin-bottom: 5vh; 
 }
 
 .cards {
-  padding: 0 70px;
+  padding: 0 5%; 
   overflow: hidden;
 }
 
 .card {
-  width: 50%;
-  margin-bottom: 15%;
-  font-size: 35px;
-  transition: 0.7s;
+  width: 45%; 
+  margin-bottom: 5vh; 
+  font-size: 2vw; 
   cursor: pointer;
   float: left;
   transition: transform 0.7s;
@@ -137,118 +126,59 @@ h6:hover {
 
 .card:hover {
   transform: scale(1.3);
-  margin-top: 0;
-  margin-bottom: 0;
-  position: abdolute;
-  z-index: 1;
 }
 
 .card-description {
   visibility: hidden;
   background-color: var(--color-black);
-  font-size: 20px;
+  font-size: 1vw; 
   color: var(--color-white);
-  padding: 10px;
+  padding: 1vw; 
   border-radius: 15px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
   text-align: center;
   transition: visibility 1s;
-  margin-top: 200px;
-  margin-bottom: 500%;
+  margin-top: 5vh; 
 }
 
 .card.active .card-description {
   visibility: visible;
 }
 
-h2 {
-  color: var(--color-white);
-  font-size: 40px;
-  margin-bottom: 20px;
-  margin-top: 200px;
-}
-
 table {
-  width: 50%;
+  width: 70%; 
   border-collapse: collapse;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 20px;
+  margin: 5vh auto; 
+  font-size: 2vw; 
 }
 
 th,
 td {
-  padding: 15px;
-  border: 0;
-  color: var(--color-white);
-  font-size: 30px;
-  text-align: center;
-}
-
-thead {
-  background-color: var(--color-red);
-}
-
-tbody tr:nth-child(even) {
-  background-color: var(--color-grey);
+  padding: 1vw; 
 }
 
 form {
   clear: both;
-  margin-top: 20px;
-  max-width: 50%;
+  margin-top: 2vh; 
+  max-width: 70%;
   margin: 0 auto;
-  margin-bottom: 200px;
-  background-color: transparent;
+  margin-bottom: 5vh; 
   background-color: var(--color-black);
-  padding: 50px;
-  border-radius: 10px;
-  box-shadow: 10px rgba(0, 0, 0, 0.1);
-  font-size: 40px;
+  padding: 5vw; 
+  border-radius: 1vw; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 2vw; 
 }
 
 form::placeholder {
-  font-size: 30px;
-}
-
-h3 {
-  color: var(--color-white);
-  font-size: 40px;
-  margin-bottom: 50px;
-  margin-top: 300px;
-
-  font-weight: 50;
-}
-
-p {
-  color: var(--color-ultra-light-grey);
-  font-size: 20px;
-  font-weight: 100;
-  margin: 40px 50px;
-  text-align: center;
-  margin-bottom: 150px;
-  word-wrap: break-word;
-  padding: 0 20px;
-}
-
-p:hover {
-  font-size: 35px;
-  margin: 40px 500px;
-  margin-bottom: 200px;
-  border-radius: 90px;
-  background-color: var(--color-black);
-  box-shadow: var(--color-black) 0px 0px 100px 100px;
-  transition: 0.7s;
+  font-size: 1.5vw; 
 }
 
 label {
-  margin-bottom: 100px;
+  margin-bottom: 5vh; 
 }
 
 input[type="text"],
@@ -256,98 +186,61 @@ input[type="email"],
 input[type="number"],
 select {
   width: 100%;
-  padding: 30px;
-  margin-bottom: 15px;
-  box-sizing: border-box;
-  font-size: 40px;
+  padding: 3vw; 
+  margin-bottom: 2vh; 
+  font-size: 2vw; 
 }
 
 input[type="range"] {
   width: 100%;
-  margin-top: 10%;
+  margin-top: 2%; 
 }
 
 button {
-  font-size: 40px;
+  font-size: 2vw; 
   background-color: var(--color-yellow);
   width: 20%;
   color: var(--color-black);
-  padding: 10px 15px;
+  padding: 1vw 1.5vw; 
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-top: 5%;
-  margin-left: 10%;
-  float: center;
-}
-
-button:hover {
-  background-color: var(--color-light-grey);
-}
-
-a {
-  text-decoration: none;
-  color: var(--color-yellow);
-}
-
-.logo-footer:hover {
-  position: relative;
-}
-
-.logo-footer:hover::before {
-  content: "Visite o Café Encantado";
-  background-color: var(--color-yellow);
-  color: var(--color-black);
-  font-size: 25px;
-  font-weight: bold;
-  padding: 10px;
-  border-radius: 150px;
-  position: absolute;
-  bottom: 110%;
-  left: 50%;
-  transform: translateX(100%);
-  z-index: 2;
-}
-
-.logo-footer a {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  text-indent: -9999px;
-  z-index: 1;
+  margin-top: 1vh; 
+  margin-left: 1vw; 
 }
 
 footer {
   text-align: center;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
-/* media query */
-
-/* telas maiores: desktop */
+/* Media Queries */
+/* Telas maiores: desktop */
 @media (min-width: 768px) {
   main {
-    padding: 40px;
+    padding: 2vw; 
   }
 
   h1 {
-    font-size: 200px;
-    margin: 100px 0 70px;
+    font-size: 10vw; 
+    margin: 5vh 0 2vh; 
+  }
+
+  nav a {
+    color: var(--color-ultra-light-grey);
   }
 
   nav ul {
-    right: 50px;
+    right: 2vw; 
   }
 
   .card {
-    width: 30%;
-    margin-right: 2%;
+    width: 30%; 
+    margin-right: 2%; 
   }
 
   form {
-    max-width: 70%;
+    max-width: 50%; 
   }
 
   input[type="range"] {
@@ -355,23 +248,23 @@ footer {
   }
 
   button {
-    margin-left: 65%;
+    margin-left: 65%; 
   }
 }
 
-/* telas menores: mobile */
+/* Telas menores: mobile */
 @media (max-width: 767px) {
   main {
-    padding: 20px;
+    padding: 1vw; 
   }
 
   h1 {
-    font-size: 100px;
-    margin: 50px 0 30px;
+    font-size: 5vw; 
+    margin: 2vh 0 1vh; 
   }
 
   nav ul {
-    right: 20px;
+    right: 1vw; 
   }
 
   .card {
@@ -381,7 +274,7 @@ footer {
 
   form {
     max-width: 100%;
-    padding: 20px;
+    padding: 1vw; 
   }
 
   input[type="range"] {
