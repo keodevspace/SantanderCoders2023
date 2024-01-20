@@ -17,7 +17,7 @@
 
 body {
   font-family: var(--font-family);
-  color: var(--color-white);  
+  color: var(--color-white);
   background: linear-gradient(to right, var(--color-black), var(--color-grey));
   text-align: center;
   margin: 0;
@@ -26,15 +26,20 @@ body {
 
 header nav {
   position: relative;
-  padding: 10px 5%;   
+  padding: 10px 5%;
 }
 
 .logo video {
-  width: 70px; 
+  width: 90px;
   height: auto;
   float: left;
   border-radius: 50%;
   box-shadow: 0 0 10px 2px var(--color-black);
+}
+
+a {
+  color: var(--color-yellow);
+  text-align: center;
 }
 
 nav a {
@@ -44,75 +49,94 @@ nav a {
 nav ul {
   list-style: none;
   position: absolute;
-  margin: 2% 0 0 0; 
-  right: 5%;   
+  margin: 2% 0 0 0;
+  right: 5%;
 }
 
 nav ul li {
-  font-size: 2vw; 
+  font-size: 2vw;
   float: left;
-  margin-left: 2vw; 
+  margin-left: 2vw;
 }
-
 
 h1,
 h2,
 h3,
 h5,
 h6 {
-  color: var(--color-white);  
+  color: var(--color-white);
 }
 
 h1 {
-  font-size: 4vw; 
-  margin: 10vh 0 5vh; 
+  font-size: 4vw;
+  margin: 10vh 0 5vh;
   padding-top: 15%;
 }
 
 h2 {
-  font-size: 3.2vw; 
-  margin-bottom: 2vh; 
-  margin-top: 10vh; 
+  font-size: 3.2vw;
+  margin-bottom: 2vh;
+  margin-top: 10vh;
 }
 
 h3 {
-  font-size: 3.2vw; 
-  margin-bottom: 5vh; 
-  margin-top: 15vh; 
+  font-size: 3.2vw;
+  margin-bottom: 5vh;
+  margin-top: 15vh;
 }
 
 h5 {
-  font-size: 3vw; 
-  margin: 0 0 1vh;   
-  color: var(--color-yellow); 
+  font-size: 3vw;
+  margin: 0 0 0.5vh;
+  color: var(--color-yellow);
 }
 
 h6 {
-  font-size: 1vw; 
-  margin: 5vh 2.5vw; 
+  font-size: 1.2vw;
+  margin: 1vh 2.5vw;
   text-align: center;
   word-wrap: break-word;
-  padding: 2vw;
+  padding: 0 19vw 0 19vw;
+}
+
+h6:hover {
+  font-size: 2vw;
+  text-shadow: 10vh 10vh 10vh var(--color-grey);
+  transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+  transition: all 0.5s ease-in-out;
+  margin: 12vh 0;
 }
 
 .cover video {
   width: 100%;
   height: auto;
-  border-radius: 5vw; 
+  border-radius: 5vw;
   box-shadow: 0 0 10px 2px var(--color-grey);
   overflow: hidden;
-  margin-bottom: 5vh; 
+  margin-bottom: 0.5vh;
+}
+
+aside {
+  margin: 5vh 0;
+}
+
+aside img {
+  width: 10%;
+  height: auto;
+  border-radius: 1vw;
+  overflow: hidden;
+  margin-bottom: 1vh;
 }
 
 .cards {
-  padding: 0 5%; 
+  padding: 0 5%;
   overflow: hidden;
 }
 
 .card {
-  width: 45%; 
-  margin-bottom: 5vh; 
-  font-size: 2vw; 
+  width: 45%;
+  margin-bottom: 5vh;
+  font-size: 2vw;
   cursor: pointer;
   float: left;
   transition: transform 0.7s;
@@ -131,9 +155,9 @@ h6 {
 .card-description {
   visibility: hidden;
   background-color: var(--color-black);
-  font-size: 1vw; 
+  font-size: 1vw;
   color: var(--color-white);
-  padding: 1vw; 
+  padding: 1vw;
   border-radius: 15px;
   position: absolute;
   top: 50%;
@@ -141,7 +165,7 @@ h6 {
   transform: translateX(-50%);
   text-align: center;
   transition: visibility 1s;
-  margin-top: 5vh; 
+  margin-top: 5vh;
 }
 
 .card.active .card-description {
@@ -149,36 +173,41 @@ h6 {
 }
 
 table {
-  width: 70%; 
+  width: 70%;
   border-collapse: collapse;
-  margin: 5vh auto; 
-  font-size: 2vw; 
+  margin: 5vh auto;
+  font-size: 2vw;
 }
 
 th,
 td {
-  padding: 1vw; 
+  padding: 1vw;
+}
+
+th {
+  background-color: var(--color-yellow);
+  color: var(--color-black);
 }
 
 form {
   clear: both;
-  margin-top: 2vh; 
+  margin-top: 2vh;
   max-width: 70%;
   margin: 0 auto;
-  margin-bottom: 5vh; 
+  margin-bottom: 5vh;
   background-color: var(--color-black);
-  padding: 5vw; 
-  border-radius: 1vw; 
+  padding: 5vw;
+  border-radius: 1vw;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-size: 2vw; 
+  font-size: 2vw;
 }
 
 form::placeholder {
-  font-size: 1.5vw; 
+  font-size: 1.5vw;
 }
 
 label {
-  margin-bottom: 5vh; 
+  margin-bottom: 5vh;
 }
 
 input[type="text"],
@@ -186,44 +215,68 @@ input[type="email"],
 input[type="number"],
 select {
   width: 100%;
-  padding: 3vw; 
-  margin-bottom: 2vh; 
-  font-size: 2vw; 
+  padding: 1vw;
+  margin-bottom: 2vh;
+  font-size: 2vw;
 }
 
 input[type="range"] {
   width: 100%;
-  margin-top: 2%; 
+  margin-top: 2%;
 }
 
 button {
-  font-size: 2vw; 
+  font-size: 2vw;
   background-color: var(--color-yellow);
   width: 20%;
   color: var(--color-black);
-  padding: 1vw 1.5vw; 
+  padding: 1vw 1vw 1vw 1vw;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-top: 1vh; 
-  margin-left: 1vw; 
+  margin-top: 3vh;
+  margin-left: 5vw;
+  text-align: center;
+}
+
+button:hover {
+  background-color: var(--color-light-grey);
+}
+
+.logo-footer video {
+  width: 90px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 2px var(--color-light-grey);
+}
+
+.logo-footer video:hover {
+  box-shadow: 0 0 10px 2px var(--color-yellow);
+}
+
+.visit {
+  font-size: 3vh;
+  color: var(--color-ultra-light-grey);
 }
 
 footer {
+  background-color: var(--color-black);
+  padding: 2vw 0;
+  font-size: 100%;
+  width: 100%;
   text-align: center;
-  margin-bottom: 0;
 }
 
 /* Media Queries */
 /* Telas maiores: desktop */
 @media (min-width: 768px) {
   main {
-    padding: 2vw; 
+    padding: 2vw;
   }
 
   h1 {
-    font-size: 10vw; 
-    margin: 5vh 0 2vh; 
+    font-size: 10vw;
+    margin: 5vh 0 2vh;
   }
 
   nav a {
@@ -231,16 +284,16 @@ footer {
   }
 
   nav ul {
-    right: 2vw; 
+    right: 2vw;
   }
 
   .card {
-    width: 30%; 
-    margin-right: 2%; 
+    width: 30%;
+    margin-right: 2%;
   }
 
   form {
-    max-width: 50%; 
+    max-width: 50%;
   }
 
   input[type="range"] {
@@ -248,23 +301,23 @@ footer {
   }
 
   button {
-    margin-left: 65%; 
+    margin-left: 65%;
   }
 }
 
 /* Telas menores: mobile */
 @media (max-width: 767px) {
   main {
-    padding: 1vw; 
+    padding: 1vw;
   }
 
   h1 {
-    font-size: 5vw; 
-    margin: 2vh 0 1vh; 
+    font-size: 5vw;
+    margin: 2vh 0 1vh;
   }
 
   nav ul {
-    right: 1vw; 
+    right: 1vw;
   }
 
   .card {
@@ -274,7 +327,7 @@ footer {
 
   form {
     max-width: 100%;
-    padding: 1vw; 
+    padding: 1vw;
   }
 
   input[type="range"] {
