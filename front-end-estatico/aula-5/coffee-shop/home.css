@@ -45,7 +45,7 @@ header nav {
 }
 
 .logo video {
-  width: 90px;
+  width: 15%; 
   height: auto;
   float: left;
   border-radius: 50%;
@@ -97,6 +97,8 @@ h2 {
 h3 {
   font-size: 3.2vw;
   margin-bottom: 5vh;
+  margin-top: 1vh;
+  padding-top: 20vh;
 }
 
 h5 {
@@ -138,7 +140,7 @@ aside {
   background: linear-gradient(to right, var(--color-black), var(--color-grey));
   border-radius: 400vw;
   box-shadow: 0 0 10px var(--color-yellow);
-  margin: 5vh 0 0 5vw;
+  margin: 5vh 0 0 15vw;
 }
 
 aside img {
@@ -150,8 +152,9 @@ aside img {
 }
 
 .cards {
-  padding: 0 5%;
+  padding: 0 10%;
   overflow: hidden;
+  margin-bottom: 20vh;
 }
 
 .card {
@@ -266,7 +269,7 @@ button:hover {
 }
 
 .logo-footer video {
-  width: 90px;
+  width: 15%; 
   height: auto;
   border-radius: 50%;
   box-shadow: 0 0 10px 2px var(--color-light-grey);
@@ -301,6 +304,13 @@ footer {
     margin: 5vh 0 2vh;
   }
 
+  h3 {
+    font-size: 4vw;
+    margin-bottom: 5vh;
+    margin-top: 1vh;
+    padding-top: 8vh;
+  }
+
   nav a {
     color: var(--color-ultra-light-grey);
   }
@@ -325,6 +335,19 @@ footer {
   button {
     margin-left: 65%;
   }
+
+  a {
+    font-size: 2vw;
+  }
+
+  .logo-footer {
+    width: 20%; 
+  }
+
+  .visit {
+    font-size: 2vh;
+  }
+
 }
 
 /* Telas menores: mobile */
@@ -333,8 +356,9 @@ footer {
     padding: 1vw;
   }
 
-  .logo video {
-    width: 50px;
+  .logo video,
+  .logo-footer video {
+    width: 15%; 
     height: auto;
     float: left;
     border-radius: 50%;
@@ -356,13 +380,10 @@ footer {
     margin: 1vh 0 2vh;
   }
 
-  h2 h3 {
+  h2, h3 {
     font-size: 4vw;
-  }
-
-  h3 {
-   margin-top: 5vh;
-   margin-bottom: 2vh;
+    margin-bottom: 2vh;
+    padding-top: 2vh;
   }
 
   h5 {
@@ -377,14 +398,6 @@ footer {
     text-align: center;
     word-wrap: break-word;
     padding: 0 19vw 0 19vw;
-  }
-
-  a {
-    font-size: 2.5vw;
-  }
-
-  .visit {
-    font-size: 1.5vh;
   }
 
   p {
@@ -407,16 +420,21 @@ footer {
     overflow: hidden;
   }
 
+  .cards {
+    padding: 0 5%;
+    overflow: hidden;
+    margin-bottom: 2vh;
+  }
+
   .card {
     width: 30%;
     margin-right: 0;
     margin-left: 2vw;
-    
   }
 
   form {
-    max-width: 100%;
-    padding: 1vw;
+    max-width: 70%;
+    padding: 5vw;
   }
 
   input[type="range"] {
@@ -425,5 +443,17 @@ footer {
 
   button {
     margin-left: 0;
+  }
+
+  a {
+    font-size: 2.5vw;
+  }
+
+  .logo-footer {
+    width: 15%; 
+  }
+
+  .visit {
+    font-size: 2vh;
   }
 }
