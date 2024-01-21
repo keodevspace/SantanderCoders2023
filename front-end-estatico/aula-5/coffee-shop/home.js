@@ -1,22 +1,3 @@
-
-//chuva de confete
-function createConfetti() {  
-  const confettiCount = 100;
-  for (let i = 0; i < confettiCount; i++) {
-    const confetti = document.createElement("div");
-    confetti.className = "confetti";
-    confetti.style.left = Math.random() * window.innerWidth + "px";
-    confetti.style.animationDuration = Math.random() * 2 + 1 + "s";
-
-    document.body.appendChild(confetti);
-
-    // finaliza a animação e remove o elemento
-    confetti.addEventListener("animationend", () => {
-      confetti.remove();
-    });
-  }
-}
-
 // evento para receber nivel de satisfação
 const rangeInput = document.getElementById("nivel-satisfacao");
 const porcentagemText = document.getElementById("porcentagem");
@@ -30,19 +11,11 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
-<<<<<<< HEAD
     // valores dos campos do formulário
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const ideia = document.getElementById("ideia").value;
     const porcentagem = document.getElementById("porcentagem").textContent;
-=======
-  // valores dos campos do formulário
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const ideia = document.getElementById("ideia").value;
-  const porcentagem = document.getElementById("porcentagem").textContent;
->>>>>>> e9421d053a9918b7382e27d8aad187a2b6ddce8d
 
     // objeto com os dados do participante
     const participantData = {
@@ -65,11 +38,9 @@ document
         console.log("Ideia Brilhante! Em breve retornaremos o contato!", data);
         alert("Ideia Brilhante! Em breve retornaremos o contato!");
       })   
-      
-      // Adiciona confetes após o envio do formulário
-      createConfetti();
+            
     })
-
+    
       .catch((error) => {
         console.error(
           "Ops...Erro ao registrar sua ideia. Tente novamente!",
