@@ -13,7 +13,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const ideia = document.getElementById("ideia").value;
-  const porcentagem = document.getElementById("porcentagem").textContent; // Corrigido aqui
+  const porcentagem = document.getElementById("porcentagem").textContent;
 
   // objeto com os dados do participante
   const participantData = {
