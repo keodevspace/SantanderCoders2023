@@ -30,11 +30,19 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
+<<<<<<< HEAD
     // valores dos campos do formulário
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const ideia = document.getElementById("ideia").value;
     const porcentagem = document.getElementById("porcentagem").textContent;
+=======
+  // valores dos campos do formulário
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const ideia = document.getElementById("ideia").value;
+  const porcentagem = document.getElementById("porcentagem").textContent;
+>>>>>>> e9421d053a9918b7382e27d8aad187a2b6ddce8d
 
     // objeto com os dados do participante
     const participantData = {
