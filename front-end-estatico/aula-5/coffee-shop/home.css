@@ -24,21 +24,6 @@ body {
   overflow-x: hidden;
 }
 
-.confetti {
-  width: 10px;
-  height: 10px;
-  background-color: var(--color-yellow);
-  position: absolute;
-  opacity: 0;
-  animation: fall linear infinite;
-}
-
-@keyframes fall {
-  to {
-    transform: translateY(100vh);
-  }
-}
-
 header nav {
   position: relative;
   padding: 10px 5%;
