@@ -24,6 +24,21 @@ body {
   overflow-x: hidden;
 }
 
+.confetti {
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-yellow);
+  position: absolute;
+  opacity: 0;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
 header nav {
   position: relative;
   padding: 10px 5%;
@@ -82,11 +97,10 @@ h2 {
 h3 {
   font-size: 3.2vw;
   margin-bottom: 5vh;
-  margin-top: 15vh;
 }
 
 h5 {
-  font-size: 3vw;
+  font-size: 2vw;
   margin: 0 0 0.5vh;
   color: var(--color-yellow);
 }
@@ -103,7 +117,8 @@ h6:hover {
   font-size: 2vw;
   text-shadow: 10vh 10vh 10vh var(--color-grey);
   transform: matrix(1.1, 0, 0, 1.1, 0, 0);
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
+  box-shadow: var(--color-grey);
   margin: 12vh 0;
 }
 
@@ -117,11 +132,17 @@ h6:hover {
 }
 
 aside {
-  margin: 5vh 0;
+  width: 40%;
+  float: left;
+  transform: rotate(-15deg);
+  background: linear-gradient(to right, var(--color-black), var(--color-grey));
+  border-radius: 400vw;
+  box-shadow: 0 0 10px var(--color-yellow);
+  margin: 5vh 0 0 5vw;
 }
 
 aside img {
-  width: 10%;
+  width: 30%;
   height: auto;
   border-radius: 1vw;
   overflow: hidden;
@@ -187,6 +208,7 @@ td {
 th {
   background-color: var(--color-yellow);
   color: var(--color-black);
+  text-align: center;
 }
 
 form {
@@ -311,18 +333,85 @@ footer {
     padding: 1vw;
   }
 
-  h1 {
-    font-size: 5vw;
-    margin: 2vh 0 1vh;
+  .logo video {
+    width: 50px;
+    height: auto;
+    float: left;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px var(--color-black);
   }
 
   nav ul {
     right: 1vw;
   }
 
-  .card {
+  nav ul li {
+    font-size: 4vw;
+    float: left;
+    margin-left: 2vw;
+  }
+
+  h1 {
+    font-size: 5vw;
+    margin: 1vh 0 2vh;
+  }
+
+  h2 h3 {
+    font-size: 4vw;
+  }
+
+  h3 {
+   margin-top: 5vh;
+   margin-bottom: 2vh;
+  }
+
+  h5 {
+    font-size: 3vw;
+    margin: 0 0 0.5vh;
+    color: var(--color-yellow);
+  }
+
+  h6 {
+    font-size: 2vw;
+    margin: 1vh 2.5vw;
+    text-align: center;
+    word-wrap: break-word;
+    padding: 0 19vw 0 19vw;
+  }
+
+  a {
+    font-size: 2.5vw;
+  }
+
+  .visit {
+    font-size: 1.5vh;
+  }
+
+  p {
+    font-size: 1vw;
+  }
+
+  .cover video {
     width: 100%;
+    height: auto;
+    border-radius: 5vw;
+    box-shadow: 0 0 10px 2px var(--color-grey);
+    overflow: hidden;
+    margin-bottom: 0.5vh;
+  }
+
+  aside img {
+    width: 20%;
+    height: auto;
+    border-radius: 1vw;
+    overflow: hidden;
+  }
+
+  .card {
+    width: 30%;
     margin-right: 0;
+    margin-left: 2vw;
+    
   }
 
   form {
