@@ -1,5 +1,5 @@
 {
-  "participants": [
+  "ideas": [
     {
       "id": "801a",
       "name": "Keo",
@@ -25,6 +25,13 @@
       "ideia": "ghghjghjghjghjghjghjghjghj",
       "porcentagem": "50%",
       "id": "PX72NDl"
+    },
+    {
+      "name": "Maria Alves",
+      "email": "keoxcoelho@gmail.com",
+      "ideia": "dasd sdgsd sdgsd",
+      "percent": "50%",
+      "id": "pKRMCaf"
     }
   ]
 }

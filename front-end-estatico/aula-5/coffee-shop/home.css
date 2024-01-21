@@ -265,7 +265,7 @@ button:hover {
 }
 
 .visit {
-  font-size: 3vh;
+  font-size: 5vh;
   color: var(--color-ultra-light-grey);
 }
 
@@ -330,7 +330,7 @@ footer {
   }
 
   .visit {
-    font-size: 2vh;
+    font-size: 3vh;
   }
 
 }
@@ -439,6 +439,6 @@ footer {
   }
 
   .visit {
-    font-size: 2vh;
+    font-size: 3vh;
   }
 }
