@@ -12,7 +12,7 @@
 
 let salario = 1700;
 let percentualAumento;
-let valorAumento;
+let valorAumento = salario * (percentualAumento / 100);
 
 if (salario <= 1500) {
     percentualAumento = 20;
