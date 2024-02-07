@@ -1,24 +1,18 @@
-// faça uma lista de alunos e depois usar o for in para imprimir os dados de cada aluno.
+// Você é um professor, e tem uma lista com alguns alunos (sendo objetos), que contém nome, nota1 e nota2. Use o for para percorer esse array e calcular a média das duas notas de cada aluno. Ao final, imprimir o nome do aluno e a sua média
 
-let alunos = [
-    {
-        nome: 'João',
-        idade: 25,
-        cidade: 'São Paulo'
-    },
-    {
-        nome: 'Maria',
-        idade: 22,
-        cidade: 'Rio de Janeiro'
-    },
-    {
-        nome: 'José',
-        idade: 30,
-        cidade: 'Curitiba'
-    }
+const listaDeAlunos = [
+  { nome: "João", notas: [8, 7] },
+  { nome: "Maria", notas: [9, 8] },
+  { nome: "Carlos", notas: [6, 5] },
+  { nome: "Ana", notas: [7, 6] },
+  { nome: "Pedro", notas: [10, 9] },
+  { nome: "Lúcia", notas: [8, 7] },
+  { nome: "Fernando", notas: [7, 6] },
+  { nome: "Camila", notas: [9, 8] },
+  { nome: "Rafael", notas: [6, 5] },
+  { nome: "Juliana", notas: [10, 9] },
 ];
 
-for (let aluno in alunos) {
-    console.log(alunos[aluno]);
+for (let aluno of listaDeAlunos) {
+  console.log(`O aluno ${aluno.nome} tem média ${(aluno.notas[0] + aluno.notas[1]) / 2}`);
 }
-
