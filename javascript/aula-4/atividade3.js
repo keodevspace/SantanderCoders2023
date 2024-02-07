@@ -3,8 +3,7 @@
 let numerosSorteados = [];
 
 for (let i = 0; i < 6; i++) {
-    let numero = Math.random() * 60;
-    numerosSorteados.push(parseInt(numero));    
+    numerosSorteados.push(parseInt(Math.random() * 60));     
 }
 
 console.log(numerosSorteados);
