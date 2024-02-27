@@ -97,164 +97,302 @@ class Pessoa {
 
 # expressões utilizadas em POO 
 ````class```` = estrutura para criar um objeto, um molde padrão; definição de características e comportamentos. Classes não têm valores, apenas estrutura, quem têm valores, quem possui estado são os objetos
+<br>
 ````objetos criados```` = são entidades/instâncias que possuem o estado e comportamento
+<br>
 ````instância```` = objeto criado a partir de uma classe
-```` atributos (propriedade)```` = características do objeto
+<br>
+````atributos (propriedade)```` = características do objeto
+<br>
 ````estados```` = valores internos dos atributos em dt momento
+<br>
 ````métodos```` = comportamentos do objeto
+<br>
+<br>
 
+### 3 formas de criar um objeto
+```sh
+const obj = {}
+```
+```sh
+function Obj() {}
+```
+```sh
+class Obj {}
+```
+<br>
 
- ````3 formas de criar um objeto````
- 1 - objeto literal = *sh const obj = {}*
- 2 - função construtora = *function Obj() {}*
- 3 - classe = *class Obj {}*
+### 3 formas de criar um atributo
+```sh
+this.nome = nome
+```
+```sh
+nome = nome
+```
+```sh
+this.nome = nome
+```
+<br>
 
-```` 3 formas de criar um atributo````
- 1 - dentro do construtor = *this.nome = nome*
- 2 - fora do construtor = *nome = nome*
- 3 - dentro do método = *this.nome = nome*
+### 3 formas de criar um método / constructor
+```sh
+function nome() {}
+```
+```sh
+nome = () => {}
+```
+```sh
+nome() {}
+```
+<br>
 
- ````3 formas de criar um método / constructor````
- 1 - função = *function nome() {}*
- 2 - arrow function = *nome = () => {}*
- 3 - método normal = nome() {}
+### 3 formas de criar um método get / set / static
+```sh
+get nome() {}
+```
+```sh
+set nome() {}
+```
+```sh
+static nome() {}
+```
+<br>
 
- ````3 formas de criar um método get / set / static````
- 1 - *get nome() {}*
- 2 - *set nome() {}*
- 3 - *static nome() {}*
+### 3 formas de acessar um atributo
+```sh
+objeto.atributo
+```
+```sh
+objeto["atributo"]
+```
+```sh
+objeto[atributo]
+```
+<br>
 
- ````3 formas de acessar um atributo````
- 1 - *objeto.atributo*
- 2 - *objeto["atributo"]*
- 3 - *objeto[atributo]*
-
- ````3 formas de acessar um método````
- 1 - *objeto.metodo()*
- 2 - *objeto["metodo"]()*
- 3 - *objeto[metodo]()*
-
+### 3 formas de acessar um método
+```sh
+objeto.metodo()
+```
+```sh
+objeto["metodo"]()
+```
+```sh
+objeto[metodo]()
+```
+<br>
+<br>
 
 # métodos mais comuns
- ````Object.keys(objeto)```` = retorna as chaves do objeto
- ````Object.values(objeto)```` = retorna os valores do objeto
- ````Object.entries(objeto)```` = retorna as chaves e valores do objeto
- ````Object.assign(objeto, {novoAtributo: valor})```` = adiciona um novo atributo ao objeto
- ````Object.freeze(objeto)```` = congela o objeto, não permite alterações
- ````Object.seal(objeto)```` = sela o objeto, não permite adicionar ou remover atributos
- ````Object.defineProperties(objeto, {atributo: {value: valor, writable: false}})```` = define as propriedades do objeto
- ````Object.getOwnPropertyDescriptors(objeto)```` = retorna as propriedades do objeto
- ````Object.getOwnPropertyDescriptor(objeto, "atributo")```` = retorna a descrição do atributo
- ````Object.preventExtensions(objeto)```` = previne a adição de novos atributos
- ````Object.isExtensible(objeto)```` = verifica se é extensível
- ````Object.isFrozen(objeto)```` = verifica se está congelado
- ````Object.isSealed(objeto)```` = verifica se está selado
- ````Object.getPrototypeOf(objeto)```` = retorna o protótipo do objeto
- ````Object.setPrototypeOf(objeto, novoPrototipo)```` = define um novo protótipo
- ````Object.create(objeto)```` = cria um novo objeto com base no objeto passado
- ````Object.getOwnPropertyNames(objeto)```` = retorna as chaves do objeto
- ````Object.getOwnPropertySymbols(objeto)```` = retorna os símbolos do objeto
- ````Object.is(objeto1, objeto2)```` = verifica se os objetos são iguais
- ````Object.toString(objeto)```` = retorna o tipo do objeto
- ````Object.valueOf(objeto)```` = retorna o valor primitivo do objeto
- ````Object.hasOwnProperty(objeto, "atributo")```` = verifica se o objeto possui o atributo
+````.keys(objeto)```` = retorna as chaves do objeto
+<br>
+````.values(objeto)```` = retorna os valores do objeto
+<br>
+````.entries(objeto)```` = retorna as chaves e valores do objeto
+<br>
+````.assign(objeto, {novoAtributo: valor})```` = adiciona um novo atributo ao objeto
+<br>
+````.freeze(objeto)```` = congela o objeto, não permite alterações
+<br>
+````.seal(objeto)```` = sela o objeto, não permite adicionar ou remover atributos
+<br>
+````.defineProperties(objeto, {atributo: {value: valor, writable: false}})```` = define as propriedades do objeto
+<br>
+````.getOwnPropertyDescriptors(objeto)```` = retorna as propriedades do objeto
+<br>
+````.getOwnPropertyDescriptor(objeto, "atributo")```` = retorna a descrição do atributo
+<br>
+````.preventExtensions(objeto)```` = previne a adição de novos atributos
+<br>
+````.isExtensible(objeto)```` = verifica se é extensível
+<br>
+````.isFrozen(objeto)```` = verifica se está congelado
+<br>
+````.isSealed(objeto)```` = verifica se está selado
+<br>
+````.getPrototypeOf(objeto)```` = retorna o protótipo do objeto
+<br>
+````.setPrototypeOf(objeto, novoPrototipo)```` = define um novo protótipo
+<br>
+````.create(objeto)```` = cria um novo objeto com base no objeto passado
+<br>
+````.getOwnPropertyNames(objeto)```` = retorna as chaves do objeto
+<br>
+````.getOwnPropertySymbols(objeto)```` = retorna os símbolos do objeto
+<br>
+````.is(objeto1, objeto2)```` = verifica se os objetos são iguais
+<br>
+````.toString(objeto)```` = retorna o tipo do objeto
+<br>
+````.valueOf(objeto)```` = retorna o valor primitivo do objeto
+<br>
+````.hasOwnProperty(objeto, "atributo")```` = verifica se o objeto possui o atributo
+<br>
+<br>
 
 
 # palavras reservadas mais usadas
-````this ````= referência ao objeto que está sendo criado
+````this````= referência ao objeto que está sendo criado
+<br>
 ````then````= executa uma função após a resolução de uma promessa
+<br>
 ````super````= referência à classe pai
-```` extends```` = herança
-```` static ````= método que pertence à classe e não ao objeto
-```` get ````= método que retorna um valor
-```` set ````= método que modifica um valor
-```` new ````= cria um novo objeto
-```` public ````= acesso livre
-```` private ````= acesso restrito
-```` protected ````= acesso restrito a classes filhas
-```` construtor ````= método especial que é chamado no momento da criação do objeto
-```` typeof ````= retorna o tipo de dado
-```` instanceof ````= verifica se um objeto é uma instância de uma classe
-```` delete ````= deleta um atributo de um objeto
-```` in ````= verifica se um atributo existe em um objeto
-```` for...in ````= percorre as chaves de um objeto
-```` for...of ````= percorre os valores de um objeto
-```` try...catch ````= tratamento de erro
-```` throw```` = lança um erro
+<br>
+````extends```` = herança
+<br>
+````static````= método que pertence à classe e não ao objeto
+<br>
+````get````= método que retorna um valor
+<br>
+````set````= método que modifica um valor
+<br>
+````new````= cria um novo objeto
+<br>
+````public````= acesso livre
+<br>
+````private````= acesso restrito
+<br>
+````protected````= acesso restrito a classes filhas
+<br>
+````construtor````= método especial que é chamado no momento da criação do objeto
+<br>
+````typeof````= retorna o tipo de dado
+<br>
+````instanceof````= verifica se um objeto é uma instância de uma classe
+<br>
+````delete````= deleta um atributo de um objeto
+<br>
+````in````= verifica se um atributo existe em um objeto
+<br>
+````try...catch````= tratamento de erro
+<br>
+````throw```` = lança um erro
+<br>
 ````finally```` = sempre é executado
+<br>
 ````break```` = interrompe a execução
+<br>
 ````continue```` = pula para a próxima iteração
+<br>
 ````return```` = retorna um valor
-```` async ````= função assíncrona
-````await ````= espera a resolução de uma promessa
-```` import```` = importa um módulo
+<br>
+````async````= função assíncrona
+<br>
+````await````= espera a resolução de uma promessa
+<br>
+````import```` = importa um módulo
+<br>
 ````export```` = exporta um módulo
+<br>
 ````module```` = módulo
-````package```` = pacote
-```` require```` = requer um módulo
-```` exports```` = exporta um módulo
+<br>
+````require```` = requer um módulo
+<br>
+````exports```` = exporta um módulo
+<br>
 ````module.exports```` = exporta um módulo
+<br>
 ````__dirname```` = diretório atual
+<br>
 ````__filename```` = nome do arquivo
+<br>
 ````setTimeout```` = executa uma função após um tempo
+<br>
 ````setInterval```` = executa uma função em intervalos regulares
+<br>
 ````clearTimeout```` = cancela o setTimeout
+<br>
 ````clearInterval```` = cancela o setInterval
+<br>
 ````fetch```` = busca dados de uma API
+<br>
 ````JSON```` = JavaScript Object Notation
+<br>
 ````Math ````= matemática
-```` Date```` = data
-```` RegExp ````= expressão regular
-````String```` = string
-```` Number```` = número
-````Boolean```` = booleano
-```` Array ````= array
-````Object```` = objeto
-````Function```` = função
+<br>
+````Date```` = data
+<br>
+````RegExp````= expressão regular
+<br>
 ````Promise```` = promessa
+<br>
 ````generator```` = gera um valor
+<br>
 ````yield```` = retorna um valor
+<br>
 ````hoisting```` = elevação
+<br>
 ````closure```` = fechamento
+<br>
 ````callback```` = retorno de chamada
+<br>
 ````event```` = evento
+<br>
 ````listener```` = ouvinte
+<br>
 ````handler```` = manipulador
-```` middleware```` = intermediário
+<br>
 ````router```` = roteador
+<br>
 ```` controller```` = controlador
+<br>
 ````model```` = modelo
+<br>
 ````view```` = visualização
-```` template```` = modelo
+<br>
+````template```` = modelo
+<br>
 ````component```` = componente
-```` directive````= diretiva
-````ervice```` = serviço
-```` provider ````= provedor
+<br>
+````directive````= diretiva
+<br>
+````service```` = serviço
+<br>
 ````factory```` = fábrica
+<br>
 ````singleton```` = único
+<br>
 ````dependency injection```` = injeção de dependência
+<br>
 ````transpiler```` = transpilador
+<br>
 ````polyfill```` = preenchimento
-
+<br>
 
  # siglas mais usadas
 ````DOM```` = Document Object Model
-```` BOM```` = Browser Object Model
+<br>
+````BOM```` = Browser Object Model
+<br>
 ````AJAX ````= Asynchronous JavaScript and XML
-```` REST```` = Representational State Transfer
+<br>
+````REST```` = Representational State Transfer
+<br>
 ````API ````= Application Programming Interface
+<br>
 ````SPA```` = Single Page Application
-```` SSR```` = Server Side Rendering
+<br>
+````SSR```` = Server Side Rendering
+<br>
 ````CSR```` = Client Side Rendering
+<br>
 ````JWT```` = JSON Web Token
-```` MVC ````= Model View Controller
+<br>
+````MVC ````= Model View Controller
+<br>
 ````ORM```` = Object Relational Mapping
+<br>
 ````ODM```` = Object Document Mapping
+<br>
 ````TDD```` = Test Driven Development
-```` BDD```` = Behavior Driven Development
-```` CI```` = Continuous Integration
-```` CD```` = Continuous Deployment
-
+<br>
+````BDD```` = Behavior Driven Development
+<br>
+````CI```` = Continuous Integration
+<br>
+````CD```` = Continuous Deployment
+<br>
+<br>
 
  #### exemplos de método get / set / static
  ```sh
