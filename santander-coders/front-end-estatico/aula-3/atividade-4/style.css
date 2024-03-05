@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: "/front-end-estatico/aula-3/atividade-4/assets/marvel.mp4"
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: rgba(230, 57, 63, 0.596); /* Adiciona um fundo vermelho transparente */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+ol li {
+    background-color: rgba(230, 57, 63, 0.8);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: rgba(230, 57, 63, 0.8);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}

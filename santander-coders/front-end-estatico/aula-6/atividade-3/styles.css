@@ -1,0 +1,60 @@
+ul li:nth-child(3) {
+  color: red;
+}
+
+ol li:nth-child(even) {
+  background-color: lightgray;
+}
+
+p:nth-of-type(4) {
+  font-weight: bold;
+}
+
+section div:nth-of-type(3) {
+  border: 1px solid blue;
+}
+
+p:not(.destacado) {
+  font-style: italic;
+}
+
+a:not(.link-especial) {
+  color: green;
+}
+
+table:has(th) {
+  background-color: yellow;
+}
+
+div:empty {
+  border: 2px dashed red;
+}
+
+span:empty {
+  background-color: lightblue;
+}
+
+ul li:last-child {
+  text-decoration: underline;
+}
+
+p:last-child {
+  color: purple;
+}
+
+ol li:first-child {
+  font-size: 18px;
+}
+
+h3:first-child {
+  font-weight: normal;
+}
+
+:is(ul, ol) {
+  margin: 0;
+}
+
+.conteúdo:where(a) {
+  text-decoration: none;
+  color: darkorange;
+}

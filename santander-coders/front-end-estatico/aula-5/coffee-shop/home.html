@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="shortcut icon" href="./assets/coffee/coffee4.png" type="image/x-icon" alt="Grãos de café">
+    <title>Café Encantado</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="./home.html">
+                <video autoplay loop muted aria-label="Logo com xícara amarela saindo fogo e grãos de café">
+                    <source src="./assets/logo/logo-cafe-encantado.mp4" type="video/mp4">
+                </video>
+            </a>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#historia">Sobre</a></li>
+                <li><a href="#formulario">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Café Encantado</h1>
+        <h5>Boas-vindas ao Café Encantado!</h5>
+        <h6>Explore os caminhos aromáticos que traçam a história de cada grão cultivado com cuidado. Nossa paixão
+            pelo café se entrelaça com a jornada de cada semente, criando um conto de sabores que despertará sua
+            imaginação.</h6>
+
+        <figure class="cover">
+            <video width="100%" height="auto" autoplay loop muted playsinline aria-label="Vídeo de grão de café
+                caindo em uma xícara branca">
+                <source src="./assets/cover/banner-cafe-encantado.mp4" type="video/mp4">
+            </video>
+        </figure>
+
+        <section id="historia">
+            <h3>História do Café Encantado</h3>
+            <h6>Em 2019, o Café Encantado foi fundado por um grupo de amigos que compartilhavam a paixão pelo café. A
+                ideia era criar um espaço onde as pessoas pudessem se reunir para apreciar um bom café e conversar
+                sobre a vida. O Café Encantado foi criado para ser um lugar onde as pessoas pudessem se sentir em
+                casa.<br><br>Nossos fundadores, apaixonados pela alquimia do café, decidiram criar um espaço único,
+                onde cada xícara conta uma história. Cada grão é colhido no momento perfeito, trazendo consigo os
+                aromas de terras distantes e a promessa de experiências sensoriais inesquecíveis.</br><br>O Café
+                Encantado é mais do que uma cafeteria; é um refúgio para aqueles que buscam inspiração. Nosso ambiente
+                acolhedor é projetado para despertar a criatividade, com cantos aconchegantes onde artistas se reúnem
+                para trocar ideias e escritores encontram a musa nas nuances de cada gole.<br><br>Da seleção rigorosa
+                dos grãos à arte de preparar cada bebida, cada detalhe no Café Encantado é cuidadosamente planejado
+                para proporcionar uma experiência única. Acreditamos que o café tem o poder de encantar os sentidos e
+                desbloquear portais para a imaginação.</h6>
+
+        </section>
+
+        <section class="cards">
+            <h3>Catálogo de Café e Inspiração</h3>
+            <figure class="card" onclick="toggleDescription(this)">
+                <img src="./assets/coffee/coffee1.png" alt="Imagem de uma xícara com café">
+                <figcaption>Café Tradicional</figcaption>
+                <div class="card-description">Um delicioso café tradicional<br><strong>R$
+                        10,00</strong></div>
+            </figure>
+
+            <figure class="card" onclick="toggleDescription(this)">
+                <img src="./assets/coffee/coffee2.png" alt="Imagem de uma xícara com café">
+                <figcaption>Cappuccino</figcaption>
+                <div class="card-description">Receita da casa<br><strong>R$
+                        30,00</strong></div>
+            </figure>
+
+            <figure class="card" onclick="toggleDescription(this)">
+                <img src="./assets/coffee/coffee4.png" alt="Imagem de grãos de café">
+                <figcaption>Grãos Selecionados</figcaption>
+                <div class="card-description">Grãos de cultivo especial<br><strong>R$ 180,00/kg</strong></div>
+            </figure>
+
+            <figure class="card" onclick="toggleDescription(this)">
+                <img src="https://img.freepik.com/fotos-gratis/delicioso-bolo-com-ameixas-frescas-e-framboesas_2829-20036.jpg?w=740&t=st=1705670380~exp=1705670980~hmac=d5ec9db7a2dd331f169a4d518f4d36d0b589e1f5dc3d6bce8bc5564d40ff416b"
+                    alt="Imagem do Cheesecake de Framboesa">
+                <figcaption>Cheesecake</figcaption>
+                <div class="card-description">Cheesecake de Framboesa<br><strong>R$
+                        20,00/kg</strong></div>
+            </figure>
+
+            <figure class="card" onclick="toggleDescription(this)">
+                <img src="https://img.freepik.com/fotos-gratis/vista-do-delicioso-bolo-feito-de-cenoura_23-2150316408.jpg?w=740&t=st=1705670060~exp=1705670660~hmac=b8ac14ce7a0042cb7b59bbdcd1e5711c63baac80945e16abe0062f96dc8cdbf9"
+                    alt="Imagem do Bolo de Cenoura">
+                <figcaption>Bolo de Cenoura</figcaption>
+                <div class="card-description">Feito com ingredientes frescos<br><strong>R$
+                        28,00/kg</strong></div>
+            </figure>
+
+            <figure class="card" onclick="toggleDescription(this)">
+                <img src="https://img.freepik.com/fotos-gratis/vista-lateral-pedaco-de-cheesecake-classico_176474-3175.jpg?w=740&t=st=1705670286~exp=1705670886~hmac=3ba9d2e316ebefb6f47b4e78082918a5922e8464618d8d26649939ed9fa00553"
+                    alt="Imagem da Torta de Limão">
+                <figcaption>Torta de Limão</figcaption>
+                <div class="card-description">Receita da casa<br><strong>R$
+                        35,00/kg</strong></div>
+            </figure>
+        </section>
+        
+            <figure>
+                <aside>
+                    <img src="./assets/coffee/open.png" alt="Logo do Instagram">
+                    <h5>Segunda à Sexta, 8:00 às 20:00<br>Aberto aos Feriados</h5>
+                </aside>
+            </figure>        
+
+        <section id="eventos">
+            <figure>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="4">Agenda de Eventos
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Data</th>
+                            <th>Evento</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>15/02/2024</td>
+                            <td>Workshop de Arte com Café</td>
+                            <td>R$ 20,00</td>
+                        </tr>
+                        <tr>
+                            <td>22/03/2024</td>
+                            <td>Noite de Poesia e Café</td>
+                            <td>Entrada Gratuita</td>
+                        </tr>
+                        <tr>
+                            <td>02/05/2024</td>
+                            <td>Violão e Café</td>
+                            <td>R$ 20,00</td>
+                        </tr>
+                        <tr>
+                            <td>16/05/2024</td>
+                            <td>Noite de Poesia e Café</td>
+                            <td>1kg de alimento</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </figure>
+        </section>
+
+        <section id="formulario">
+            <h3>Registre-se para ideias brilhantes</h3>
+            <form id="registrationForm">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required> 
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>  
+                
+                <label for="ideia">Ideia Brilhante</label>
+                <input type="text" id="ideia" name="ideia" required>  
+    
+                <label for="satisfaction">Nível de satisfação</label>
+                <input type="range" id="satisfaction">
+                <span id="percent">50%</span><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <a class="logo-footer" href="https://www.google.com/maps/place/Caf%C3%A9+Encantado+%E2%80%A2+Curitiba/@-25.3999986,-49.2661062,17z/data=!3m1!4b1!4m6!3m5!1s0x94dce77a96d27753:0x3a54d76cca8616b0!8m2!3d-25.3999986!4d-49.2635313!16s%2Fg%2F11l5npfr54?entry=ttu">
+            <video autoplay loop muted aria-label="Logo com xícara amarela saindo fogo e grãos de café">
+                <source src="./assets/logo/logo-cafe-encantado.mp4" type="video/mp4">
+            </video>
+        </a>  
+        <p class="visit">Visite</p>      
+    </main>
+    
+    <footer>
+        <p>Desenvolvido por <a href="https://keodevspace.vercel.app/index.html">keoDEVspace</a>&copy2024</p>
+    </footer>
+    
+    <script src="./home.js"></script>
+</body>
+</html>

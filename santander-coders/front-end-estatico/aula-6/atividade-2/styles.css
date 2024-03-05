@@ -1,0 +1,34 @@
+.destacado span {
+  color: blue;
+}
+
+ul li {
+  font-weight: bold;
+}
+
+/* Filho (>) */
+ul > li {
+  background-color: #eee;
+}
+
+.conteúdo > h2 {
+  font-style: italic;
+}
+
+/* Irmão Geral (~) */
+p:first-of-type ~ p {
+  text-decoration: underline;
+}
+
+table:first-of-type ~ table {
+  border: 2px solid red;
+}
+
+/* Irmão Adjacente (+) */
+p + p {
+  color: green;
+}
+
+ul:first-of-type + ul {
+  margin-top: 20px;
+}

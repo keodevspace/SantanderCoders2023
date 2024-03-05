@@ -1,0 +1,124 @@
+@import url('sidenav-component.css');
+@import url('all-styles.css');
+
+.fixed-card {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  top: 40%;
+  left: 21%;
+  z-index: 999;
+  align-items: justify;
+  max-width: fit-content;
+}
+
+.card-title {
+  font-family: var(--font-child);
+  font-size: 6rem;
+}
+
+.card-text {
+  font-size: 1.5rem;
+}
+
+figure img {
+  width: 35%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 60%;
+  max-width: fit-content;
+}
+
+
+
+/* telas maiores */
+@media screen and (min-width: 1201px) {
+  .fixed-card {
+    width: 60%;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    z-index: 999;
+    align-items: justify;
+    max-width: fit-content;
+  }
+
+  .card-title {
+    font-family: var(--font-child);
+    font-size: 10rem;
+  }
+
+  .card-text {
+    font-size: 2rem;
+  }
+
+  figure img {
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 70%;
+    max-width: fit-content;
+  }
+}
+
+/* telas médias */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .fixed-card {
+    width: 60%;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    z-index: 999;
+    align-items: justify;
+  }
+
+  h5 {
+    font-size: 80%;
+  }
+
+  figure img {
+    width: 35%;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 63%;
+    margin-bottom: 0;
+    max-width: fit-content;
+  }
+}
+
+/* telas menores */
+@media screen and (max-width: 761px) {
+  .fixed-card {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 8%;
+    left: 25%;
+    z-index: 999;
+    align-items: justify;
+  }
+
+  h5 {
+    font-size: 4rem;
+    A
+  }
+
+  .card-text {
+    font-size: 1.2rem;
+  }
+
+  figure img {
+    width: 35%;
+    height: auto;
+    max-width: fit-content;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    margin-bottom: 0;
+  }
+}

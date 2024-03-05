@@ -1,0 +1,70 @@
+@import url('all-styles.css');
+@import url('sidenav-component.css');
+
+.nav-link {
+  margin: 15px;
+  color: var(--color-white);
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 15px;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 2%;
+}
+
+.menu-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  padding: 0;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  text-align: center;
+  color: var(--color-white);
+  gap: 16px;
+  max-width: 300px;
+}
+
+.menu-footer {
+  background-color: transparent;
+}
+
+.menu-img-top {
+  width: 100%;
+  max-width: 256px;
+  height: auto;
+}
+
+.custom-card-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.menu-secondary {
+  padding: 4px 8px;
+  color: var(--color-white);
+  background-color: var(--color-green);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.custom-card-footer {
+  background-color: var(--color-green);
+  max-width: fit-content;
+  padding: 4px 8px;
+  margin: 0 auto;
+  gap: 16px;
+}

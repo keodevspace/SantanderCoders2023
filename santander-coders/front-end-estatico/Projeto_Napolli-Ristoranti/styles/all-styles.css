@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-back: #1e1e1e;
+    --color-sidenav: #151515;
+    --color-white: #faf8eb;
+    --color-red: #d11414;
+    --color-green: #398433;
+    --color-grey: #3e4347;
+    --color-blue: #3d3db8;
+    --font-family: "Golos Text", sans-serif;
+    --font-child: "Playfair Display", serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-image: url("../img/food/background.png");
+    background-repeat: no-repeat;
+    background-color: var(--color-back);
+    color: var(--color-white);
+    background-size: 100%;
+}

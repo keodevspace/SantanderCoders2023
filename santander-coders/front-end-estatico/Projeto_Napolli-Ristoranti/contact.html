@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./img/logo/logo-napoli.png" />
+  <title>Napoli Ristoranti</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/contact-component.css" />
+</head>
+
+<body>
+  <header>
+    <section>
+      <nav class="nav">
+        <li class="nav-item">
+          <img id="navbar-collapsed" src="./img/logo/logo-napoli.png" alt="Logo Napoli" width="30" height="35" />
+          <p>
+            <img id="navbar-expanded" class="nav-item-logo-name" src="./img/logo/logo-name.png"
+              alt="Logotipo Napoli por extenso" width="auto" height="37" />
+          </p>
+        </li>
+        <li>
+          <a class="nav-link" href="/home.html">
+            <img src="img/sidenav/house.png" width="60" height="auto" alt="Botão para acessar a página principal" />
+            <p>Início</p>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="/about.html">
+            <img src="img/sidenav/info.png" width="60" height="auto"
+              alt="Botão para acessar a página da história do Napoli Ristoranti" />
+            <p>Sobre</p>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="/menu.html">
+            <img src="img/sidenav/flatware.png" width="60" height="auto"
+              alt="Botão para acessar a página do cardápio" />
+            <p>Cardápio</p>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="/contact.html">
+            <img src="img/sidenav/phone.png" width="60" height="auto"
+              alt="Botão para acessar a página do formulário de contato" />
+            <p>Contato</p>
+          </a>
+        </li>
+        <div class="develop">
+          <li>
+            <p>development by
+              <a href="http://www.github.com.br" id="squad"> SquadFive </a>
+              &copySantanderCoders 2023/2
+            </p>
+            </a>
+          </li>
+        </div>
+      </nav>
+    </section>
+  </header>
+
+  <main>
+    <section id="formulario">
+      <h3 class="h3-form">Faça sua reserva</h3>
+      <form id="reservationForm">
+        <div class="form-inputs">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" required>         
+          <div class="date-time">
+            <div>
+              <label for="date">Data</label>
+              <input type="date" id="date" name="date" required>  
+            </div>
+            <div>
+              <label for="time">Hora</label>
+              <input type="time" id="time" name="time" required>
+            </div>
+          </div>
+          <label for="detail">Detalhes</label>
+          <textarea id="detail" name="detail" required class="details"></textarea><br>  
+        </div>
+        <button type="submit">Enviar reserva</button>          
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="img-ifood">
+      <a href="https://www.ifood.com.br/" target="_blank">
+        <img src="./img/footer/ifood.png" alt="Logo do Ifood" width="100" height="auto" />
+      </a>
+      <p>Todos os direitos reservados ao Ifood©</p>
+    </div>
+  </footer>
+
+  <script src="/scripts/form.js"></script>
+  
+</body>
+
+</html>

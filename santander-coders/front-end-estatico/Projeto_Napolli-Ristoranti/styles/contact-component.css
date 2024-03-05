@@ -1,0 +1,68 @@
+@import url(/styles/all-styles.css);
+@import url(/styles/sidenav-component.css);
+@import url(/styles/footer-component.css);
+
+.h3-form {
+    padding-top: 4%;     
+    font-size: 40px;
+    text-align: left;
+    font-family: var(--font-family); 
+    margin-left: 31%;
+}
+
+form {  
+    width: 90%; 
+    max-width: 600px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    padding-top: 50px;
+    padding-inline: 25px; 
+    border-radius: 5px;
+}
+
+.date-time {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.details {
+    width: 100%; 
+    padding: 15px; 
+    font-size: 20px;
+    border-radius: 4px;
+    border: 1px solid var(--color-white);
+}
+
+form label {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-white);
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;    
+    gap: 40px;
+}
+
+button {
+    font-size: 1.25em;    
+    font-weight: 500;   
+    height: auto;       
+    background-color: var(--color-green);
+    color: var(--color-white);
+    border-radius: 5px;
+    align-self: flex-start; 
+    width: auto; 
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+a:hover {
+    text-decoration: underline;
+    font-style: italic;
+}

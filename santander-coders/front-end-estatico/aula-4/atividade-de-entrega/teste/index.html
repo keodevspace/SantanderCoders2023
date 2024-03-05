@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Ajude a Causa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Ajude a Causa</h1>
+
+<form id="registrationForm">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="age">Idade:</label>
+    <input type="number" id="age" name="age" required>
+
+    <label for="paymentMethod">Método de Pagamento:</label>
+    <select id="paymentMethod" name="paymentMethod" required>
+        <option value="pix">PIX</option>
+        <option value="creditCard">Cartão de Crédito</option>
+    </select>
+
+    <div id="creditCardDetails" style="display: none;">
+        <label for="creditCardNumber">Número do Cartão de Crédito:</label>
+        <input type="text" id="creditCardNumber" name="creditCardNumber">
+
+        <label for="expirationDate">Data de Expiração:</label>
+        <input type="text" id="expirationDate" name="expirationDate">
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv">
+    </div>
+
+    <label for="donationAmount">Valor da Doação:</label>
+    <input type="number" id="donationAmount" name="donationAmount" required>
+
+    <button type="button" onclick="submitForm()">Registrar</button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
