@@ -3,8 +3,12 @@
 - *ENCAPSULAMENTO* => proteção dos atributos e métodos de uma classe
 - *HERANÇA* => uma classe filha herda os atributos e métodos da classe pai
 - *POLIMORFISMO* => múltiplas formas
+<br>
 
-#### exemplos de abstração (classes) 
+````encapsulamento````: atributos privados não podem ser acessados fora da classe, mas podemos criar metodos para acessar esses atributos`
+
+
+#### exemplos de abstração (classes)
 ```sh
 class Pessoa {
      constructor(nome, idade) {
@@ -75,7 +79,7 @@ class Pessoa {
  let gato = new Gato()
  gato.emitirSom()
  ```
- #### exemplos de encapsulamento 
+ #### exemplos de encapsulamento
  ```sh
  class Animal {
      #nome
@@ -95,7 +99,7 @@ class Pessoa {
  console.log(animal.nome)
 ```
 
-# expressões utilizadas em POO 
+# expressões utilizadas em POO
 ````class```` = estrutura para criar um objeto, um molde padrão; definição de características e comportamentos. Classes não têm valores, apenas estrutura, quem têm valores, quem possui estado são os objetos
 <br>
 ````objetos criados```` = são entidades/instâncias que possuem o estado e comportamento
@@ -107,6 +111,8 @@ class Pessoa {
 ````estados```` = valores internos dos atributos em dt momento
 <br>
 ````métodos```` = comportamentos do objeto
+<br>
+````hoisting````: não conseguimos alterar a ordem do codigo pq o js não entende a ordem de cima para baixo
 <br>
 <br>
 
@@ -391,6 +397,8 @@ objeto[metodo]()
 ````CI```` = Continuous Integration
 <br>
 ````CD```` = Continuous Deployment
+<br>
+````LTS```` = Long Term Support 
 <br>
 <br>
 
