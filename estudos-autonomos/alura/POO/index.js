@@ -4,11 +4,13 @@ import User from './User.js';
 import Admin from './Admin.js';
 import Docente from './Docente.js';
 
-const novoUser = new User('Zé', 'estudante');
+const novoUser = new User('Marcelo Moreno', 'estudante');
 console.log(novoUser.exibirInfos()); // mostra o objeto user
 
-const novoAdmin = new Admin('Maria', 'admin');
+const novoAdmin = new Admin('Toró', 'admin');
 console.log(novoAdmin.exibirInfos()); // mostra o objeto admin
 
-const novoDocente = new Docente('João', 'docente');
-console.log(novoDocente.exibirInfos()); // mostra o objeto docente
+const novoDocente = new Docente('Val Baiano', 'docente');
+
+novoAdmin.nome = 'Rodnei'; // altera o nome do admin pq usei o setter
+console.log(novoAdmin.exibirInfos()); // mostra o objeto admin com o nome alterado
