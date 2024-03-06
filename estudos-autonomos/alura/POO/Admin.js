@@ -1,15 +1,16 @@
 // herança
 import User from './User.js';
 
-export class Admin extends User {
+export default class Admin extends User {
     constructor(nome, role = 'admin', ativo = true) {
         super(nome, role, ativo);
+    }
+
+    nomeDoAdmin() { // vai precisar de um método acessor para acessar o atributo privado
+        return this.nome;
     }
 
     criarCurso(nomedoCurso, vagas) {
         return `Curso ${nomedoCurso} criado com ${vagas} vagas`;
     }
 }
-
-const novoAdmin = new Admin('Keo', 'admin');
-console.log(novoAdmin.criarCurso('JS', 20));

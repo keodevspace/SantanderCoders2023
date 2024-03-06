@@ -1,16 +1,28 @@
 export default class User {
+    #nome; // atributo privado
+    #role;
+    #ativo;
+
   constructor(nome, role, ativo = true) {
-    this.nome = nome; 
-    this.role = role || 'estudante';
-    this.ativo = ativo;
+    this.#nome = nome;
+    this.#role = role || 'estudante';
+    this.#ativo = ativo;
+  }
+
+  #montarObjetoUser() { // método privado
+    return {
+      nome: this.#nome,
+      role: this.#role,
+      ativo: this.#ativo,
+    };
   }
 
   exibirInfos() {
-    return `${this.nome}, ${this.role}`;
+    const objetoUser = this.#montarObjetoUser(); // chamando método privado
+    return `${objetoUser.nome}, ${objetoUser.role}`; // acessando atributos privados
   }
 }
 
-const novoUser = new User('Juliana', 'estudante');
-console.log(novoUser.exibirInfos());
+
 
 
