@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "POO",
   "type": "module",
-  "main": "new.js",
+  "main": "Admin.js",
   "directories": {
     "doc": "docs"
   },
