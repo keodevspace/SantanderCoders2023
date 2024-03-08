@@ -1,4 +1,4 @@
-export default class User {
+export default class User { // abstração de um usuário
     #nome; // atributo privado
     #role;
     #ativo;
@@ -28,7 +28,7 @@ export default class User {
     this.#nome = novoNome; // recebe um argumento e altera o valor do atributo privado
   } // só aceita um argumento
 
-  exibirInfos() {
+  exibirInfos() { // esse método pode ser usado por todas as classses, assim como pode ter suas próprias particularidades nas classes filhas
     return `${this.nome}, ${this.role}`; // acessa os getters
   }
 }
