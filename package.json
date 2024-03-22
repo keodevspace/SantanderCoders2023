@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "node": "^21.6.1",
-    "tsc": "^2.0.4"
-  },
-  "devDependencies": {
-    "typescript": "^5.4.2"
-  }
-}
