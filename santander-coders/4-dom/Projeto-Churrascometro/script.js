@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    
+
     const infoForm = document.getElementById('infoForm');
     infoForm.addEventListener('submit', function (event) {
         event.preventDefault();

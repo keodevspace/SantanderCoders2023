@@ -37,3 +37,7 @@ body {
   height: auto;
   display: block;
 }
+
+#resultado {
+  color: var(--cor5); 
+}
