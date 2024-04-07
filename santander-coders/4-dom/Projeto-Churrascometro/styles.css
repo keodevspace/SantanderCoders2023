@@ -1,27 +1,39 @@
-/* Estilos adicionais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor1: #130803;
+  --cor2: #311910;
+  --cor3: #622618;
+  --cor4: #9c3e1b;
+  --cor5: #d09674;
+  --cor6: #fff07a;
+}
+
 body {
-    background-color: #f8d7da;
+  background-color: var(--cor1);
+  color: var(--cor6);
 }
 
 .container {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--cor2);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.btn-primary {
-    background-color: #dc3545;
-    border-color: #dc3545;
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
-.btn-primary:hover {
-    background-color: #c82333;
-    border-color: #bd2130;
-}
-
-.form-control:focus {
-    border-color: #dc3545;
-    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+#bannerImage {
+  width: 100%;
+  height: auto;
+  display: block;
 }
