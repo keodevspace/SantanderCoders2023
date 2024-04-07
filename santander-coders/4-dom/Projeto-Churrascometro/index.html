@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrascômetro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="step1">
+            <h2>Passo 1: Informações Pessoais</h2>
+            <form id="infoForm">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="cep">CEP:</label>
+                    <input type="text" class="form-control" id="cep" required>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="promocao" checked disabled>
+                    <label class="form-check-label" for="promocao">Aceito receber e-mails com promoções</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Próximo</button>
+            </form>
+        </div>
+        <div id="step2" style="display: none;">
+            <h2>Passo 2: Quantidade de Pessoas</h2>
+            <form id="quantidadeForm">
+                <div class="form-group">
+                    <label for="homens">Homens:</label>
+                    <input type="number" class="form-control" id="homens" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="mulheres">Mulheres/Adultos:</label>
+                    <input type="number" class="form-control" id="mulheres" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="criancas">Crianças:</label>
+                    <input type="number" class="form-control" id="criancas" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="alcool">Pessoas que bebem bebidas alcoólicas:</label>
+                    <input type="number" class="form-control" id="alcool" min="0" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Próximo</button>
+            </form>
+        </div>
+        <div id="step3" style="display: none;">
+            <h2>Passo 3: Resultado</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody id="resultado">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
