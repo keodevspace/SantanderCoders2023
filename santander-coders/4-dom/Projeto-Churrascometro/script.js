@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Passo 1: Informações Pessoais
+    
     const infoForm = document.getElementById('infoForm');
     infoForm.addEventListener('submit', function (event) {
         event.preventDefault();
@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('step2').style.display = 'block';
     });
 
-    // Passo 2: Quantidade de Pessoas
     const quantidadeForm = document.getElementById('quantidadeForm');
     quantidadeForm.addEventListener('submit', function (event) {
         event.preventDefault();
@@ -68,7 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('step3').style.display = 'block';
     });
 
-    // Verificar se já há informações preenchidas
     if (localStorage.getItem('nome')) {
         document.getElementById('nome').value = localStorage.getItem('nome');
     }
@@ -78,4 +76,22 @@ document.addEventListener("DOMContentLoaded", function () {
     if (localStorage.getItem('cep')) {
         document.getElementById('cep').value = localStorage.getItem('cep');
     }
+});
+
+document.getElementById('downloadButton').addEventListener('click', function () {
+    const resultadoText = document.getElementById('resultado').innerText;
+
+    const blob = new Blob([resultadoText], { type: 'text/plain' });
+
+    const downloadLink = document.createElement('a');
+    downloadLink.download = 'lista_churras.txt';
+    downloadLink.href = window.URL.createObjectURL(blob);
+
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+
+    setTimeout(function () {
+        window.URL.revokeObjectURL(downloadLink.href);
+        document.body.removeChild(downloadLink);
+    }, 0);
 });
